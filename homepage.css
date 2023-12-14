@@ -1,0 +1,1075 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+
+/* `````````styling for header section``````````````````` */
+
+#header {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px rgb(214, 213, 213), -0px -0px 5px 2px rgb(214, 213, 213);
+}
+
+
+/* `````````styling for header left section``````````````````` */
+
+#header #head_left_box {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+#header #head_left_box .fa-facebook {
+    font-size: 2.8rem;
+    color: rgb(45, 45, 243);
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+#header #head_left_box input {
+    height: 2.5rem;
+    width: 13rem;
+    background: rgb(228, 228, 228);
+    border: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: grey;
+    font-size: 0.9rem;
+    padding-left: 0.6rem;
+    box-shadow: 0px 0px 0px rgb(177, 174, 174), -0px -0px 0px rgb(177, 174, 174);
+}
+
+#header #head_left_box input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+
+#header #head_left_box #search {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: rgb(128, 110, 110);
+    background: rgb(228, 228, 228);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#header #head_left_box #search .fa-search {
+    margin: 0.6rem 0.6rem;
+}
+
+
+/* `````````styling for header main section``````````````````` */
+
+#header #head_main_box {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 40%;
+}
+
+#header #head_main_box .icon {
+    font-size: 1.7rem;
+    width: 4.5rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    height: 3rem;
+    position: relative;
+}
+
+#header #head_main_box .icon .fa-tv::after {
+    content: '10+';
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    width: 2.3rem;
+    height: 1.2rem;
+    text-align: center;
+    background: red;
+    color: white;
+    z-index: 2;
+    padding-top: 0.2rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+#header #head_main_box .icon:hover {
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* `````````styling for header right section``````````````````` */
+
+#header #head_right_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 18%;
+}
+
+#header #head_right_box .icon {
+    font-size: 1.2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem 0.7rem;
+    background: rgb(217, 217, 217);
+    border-radius: 50%;
+    position: relative;
+}
+
+#header #head_right_box .icon .fa-bell::after {
+    content: '8';
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.3rem;
+    width: 1.6rem;
+    height: 1.4rem;
+    text-align: center;
+    background: red;
+    color: white;
+    z-index: 2;
+    padding-top: 0.2rem;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+#header #head_right_box .icon:hover {
+    background: rgb(203, 203, 203);
+    cursor: pointer;
+}
+
+#header #head_right_box img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 1.8px solid rgb(187, 187, 187);
+}
+
+
+/* `````````styling for main-box section``````````````````` */
+
+#mainBox {
+    display: flex;
+    position: relative;
+    top: 4.6rem;
+}
+
+
+/* `````````styling for left main-box section``````````````````` */
+
+#mainBox #mainBox_left_box {
+    position: fixed;
+    width: 24%;
+    padding: 0.5rem 0rem 0rem 1rem;
+}
+
+#mainBox #mainBox_left_box .image {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem 1rem 0rem;
+    width: 13rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+
+#mainBox #mainBox_left_box .image img {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    border: 1.8px solid rgb(187, 187, 187);
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+
+#mainBox #mainBox_left_box .image span {
+    font-size: 1.2rem;
+}
+
+#mainBox #mainBox_left_box .visible_icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+    width: 15rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+#mainBox #mainBox_left_box .hidden {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+    width: 15rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+
+#mainBox #mainBox_left_box .hidden span,
+#mainBox #mainBox_left_box .visible_icon span {
+    margin: 0rem 0rem 0rem 1rem;
+    font-size: 1.1rem;
+}
+
+#mainBox #mainBox_left_box .fa-user-friends {
+    color: rgb(199, 30, 30);
+}
+
+#mainBox #mainBox_left_box .fa-users {
+    color: green;
+}
+
+#mainBox #mainBox_left_box .fa-bookmark {
+    color: rgb(255, 0, 0);
+}
+
+#mainBox #mainBox_left_box .fa-font-awesome-flag {
+    color: orangered;
+}
+
+#mainBox #mainBox_left_box .fa-calendar-week {
+    color: rgb(255, 0, 0);
+}
+
+#mainBox #mainBox_left_box .fa-bullhorn {
+    color: rgb(42, 42, 174);
+}
+
+#mainBox #mainBox_left_box .fa-signal {
+    color: blue;
+}
+
+#mainBox #mainBox_left_box .fa-globe-africa {
+    color: green;
+}
+
+#mainBox #mainBox_left_box .fa-shield-virus {
+    color: rgb(141, 198, 54);
+}
+
+#mainBox #mainBox_left_box .fa-hand-holding-heart {
+    color: red;
+}
+
+#mainBox #mainBox_left_box .fa-credit-card {
+    color: black;
+    transform: rotate(-30deg);
+}
+
+#mainBox #mainBox_left_box .fa-star {
+    color: orange;
+}
+
+#mainBox #mainBox_left_box .fa-facebook-messenger {
+    color: red;
+}
+
+#mainBox #mainBox_left_box .fa-business-time {
+    color: rgb(0, 182, 254);
+}
+
+#mainBox #mainBox_left_box .fa-headset {
+    color: rgb(0, 0, 0);
+}
+
+#mainBox #mainBox_left_box .fa-ad {
+    color: rgb(255, 0, 217);
+}
+
+#mainBox #mainBox_left_box .fa-heart {
+    background-color: rgb(243, 159, 2);
+    color: red;
+    padding: 0.3rem 0.3rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#mainBox #mainBox_left_box .fa-chevron-up {
+    background-color: rgb(164, 164, 164);
+    color: rgb(82, 77, 77);
+    padding: 0.3rem 0.3rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#mainBox #mainBox_left_box .fa-chevron-down {
+    background-color: rgb(164, 164, 164);
+    color: rgb(82, 77, 77);
+    padding: 0.3rem 0.3rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#mainBox #mainBox_left_box img {
+    width: 3rem;
+    height: 3rem;
+}
+
+#mainBox #mainBox_left_box .image:hover,
+#mainBox #mainBox_left_box .hidden:hover,
+#mainBox #mainBox_left_box .visible_icon:hover {
+    background-color: rgb(210, 209, 209);
+    cursor: pointer;
+}
+
+#mainBox #mainBox_left_box div h3 {
+    color: rgb(83, 82, 82);
+    margin: 0rem 0rem 0.8rem 0rem;
+}
+
+#mainBox #mainBox_left_box .image_1 {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem 0.8rem 0rem;
+    height: 4rem;
+    width: 13rem;
+    padding-left: 1rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+#mainBox #mainBox_left_box .image_2 {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    width: 13rem;
+    padding-left: 1rem;
+    margin: 0rem 0rem 0.8rem 0rem;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+#mainBox #mainBox_left_box .image_1:hover,
+#mainBox #mainBox_left_box .image_2:hover {
+    background-color: rgb(210, 209, 209);
+    cursor: pointer;
+}
+
+#mainBox #mainBox_left_box .image_1 img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+#mainBox #mainBox_left_box .image_2 img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 10px;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+#mainBox #mainBox_left_box .horizontal_ruler {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(184, 164, 164);
+    margin-bottom: 1rem;
+}
+
+#mainBox #mainBox_left_box .caption {
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+#mainBox #mainBox_left_box .caption span {
+    color: rgb(145, 145, 145);
+    font-size: 0.9rem;
+}
+
+#mainBox #mainBox_left_box .caption span a:hover {
+    border-bottom: 1px solid rgb(145, 145, 145);
+    cursor: pointer;
+}
+
+
+/* `````````styling for mid main-box section``````````````````` */
+
+#mainBox_midbox {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin-left: 21rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+
+/* `````````styling for mid main-box stories section``````````````````` */
+
+#mainBox_midbox .stories {
+    display: flex;
+    justify-content: center;
+    margin: 0rem 6rem;
+}
+
+#mainBox_midbox .stories #box-1 {
+    width: 23%;
+    height: 11rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    border: 1px solid grey;
+    margin-right: 1rem;
+    box-shadow: 0px 1px 2px 1px rgb(177, 174, 174), -0px -1px 2px 1px rgb(177, 174, 174);
+}
+
+#mainBox_midbox .stories #box-1 img {
+    height: 7rem;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#mainBox_midbox .stories #box-1 .fa-plus-circle {
+    font-size: 2.4rem;
+    position: relative;
+    bottom: 1rem;
+    background: white;
+    color: red;
+    border-radius: 50%;
+}
+
+#mainBox_midbox .stories #box-1 p {
+    font-weight: bold;
+    text-align: center;
+}
+
+#mainBox_midbox .stories #box-2 {
+    background-image: url("images/nature.png");
+    width: 23%;
+    height: 11rem;
+    border-radius: 15px;
+    display: flex;
+    margin-right: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid grey;
+    box-shadow: 0px 1px 2px 1px rgb(177, 174, 174), -0px -1px 2px 1px rgb(177, 174, 174);
+}
+
+#mainBox_midbox .stories #box-2 img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#mainBox_midbox .stories #box-2 p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+#mainBox_midbox .stories #box-3 {
+    background-image: url("images/birdlove.png");
+    background-size: contain contain;
+    background-repeat: no-repeat;
+    background-position: 43% 0%;
+    width: 23%;
+    height: 11rem;
+    border-radius: 15px;
+    display: flex;
+    margin-right: 1em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid grey;
+    box-shadow: 0px 1px 2px 1px rgb(177, 174, 174), -0px -1px 2px 1px rgb(177, 174, 174);
+}
+
+#mainBox_midbox .stories #box-3 .logo img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#mainBox_midbox .stories #box-3 p {
+    margin-bottom: 0.5rem;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+#mainBox_midbox .stories #box-4 {
+    background: url("images/bird.png");
+    background-position: center center;
+    width: 23%;
+    height: 11rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    justify-content: space-between;
+    border: 1px solid grey;
+    box-shadow: 0px 1px 2px 1px rgb(177, 174, 174), -0px -1px 2px 1px rgb(177, 174, 174);
+}
+
+#mainBox_midbox .stories #box-1:hover,
+#mainBox_midbox .stories #box-2:hover,
+#mainBox_midbox .stories #box-3:hover,
+#mainBox_midbox .stories #box-4:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#mainBox_midbox .stories #box-1:hover img {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+#mainBox_midbox .stories #box-4 img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#mainBox_midbox .stories #box-4 p {
+    margin-bottom: 0.5rem;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+#mainBox_midbox .stories #box-4 .fa-chevron-right {
+    background-color: rgb(198, 198, 198);
+    color: rgb(255, 255, 255);
+    padding: 1.3rem 1.3rem;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    transition: all 0.4s;
+}
+
+#mainBox_midbox .stories #box-4 .fa-chevron-right:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+    cursor: pointer;
+}
+
+
+/* `````````styling for mid main-box postbox section``````````````````` */
+
+#mainBox_midbox #post_box {
+    margin: 1rem auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 0.5px 5px 1px rgb(177, 174, 174), -1px -0.5px 5px 1px rgb(177, 174, 174);
+}
+
+#mainBox_midbox #post_box .top_portion {
+    display: flex;
+    width: 100%;
+    padding: 0.4em 1em;
+}
+
+#mainBox_midbox #post_box .top_portion img {
+    height: 3.2em;
+    width: 3.2em;
+    margin-right: 1em;
+    border: 1px solid rgb(192, 175, 175);
+    border-radius: 50%;
+}
+
+#mainBox_midbox #post_box .top_portion input {
+    width: 18rem;
+    height: 2.5em;
+    background: rgb(232, 232, 232);
+    padding: 0rem 2rem;
+    border: 0;
+    border-radius: 15px;
+    color: grey;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+#mainBox_midbox #post_box .top_portion input:hover {
+    background: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+#mainBox_midbox #post_box .horizontal-ruler {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(221, 215, 215);
+    margin-bottom: 1rem;
+}
+
+#mainBox_midbox #post_box .icon {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+
+#mainBox_midbox #post_box .icon #icon-1,
+#mainBox_midbox #post_box .icon #icon-2,
+#mainBox_midbox #post_box .icon #icon-3 {
+    padding: 0.6rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+#mainBox_midbox #post_box .icon #icon-1:hover,
+#mainBox_midbox #post_box .icon #icon-2:hover,
+#mainBox_midbox #post_box .icon #icon-3:hover {
+    background: rgb(233, 232, 232);
+    cursor: pointer;
+}
+
+#mainBox_midbox #post_box .icon span {
+    color: rgb(97, 97, 97);
+}
+
+#mainBox_midbox #post_box .icon .fa-video {
+    font-size: 1.2rem;
+    color: red;
+    margin-right: 0.2rem;
+}
+
+#mainBox_midbox #post_box .icon .fa-images {
+    font-size: 1.2rem;
+    color: green;
+    margin-right: 0.2rem;
+}
+
+#mainBox_midbox #post_box .icon .fa-laugh-beam {
+    font-size: 1.2rem;
+    color: rgb(151, 151, 12);
+    margin-right: 0.2rem;
+}
+
+
+/* `````````styling for mid main-box roombox section``````````````````` */
+
+#mainBox_midbox #room_box {
+    margin: 0rem auto;
+    padding: 0.3rem 0.3rem;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 0.5px 5px 1px rgb(177, 174, 174), -1px -0.5px 5px 1px rgb(177, 174, 174);
+}
+
+#mainBox_midbox #room_box .image {
+    border-radius: 10px;
+    padding: 0.2rem 0.4rem;
+    transition: all 0.2s;
+}
+
+#mainBox_midbox #room_box .image:hover {
+    background: rgb(213, 213, 213);
+    cursor: pointer;
+}
+
+#mainBox_midbox #room_box .image img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+#mainBox_midbox #room_box #div_1 {
+    height: 2rem;
+    width: 9rem;
+    padding-left: 0.2rem;
+    padding-top: 0.2rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(148, 210, 214);
+    border-radius: 12px;
+}
+
+#mainBox_midbox #room_box #div_1 .fa-video-slash {
+    color: red;
+    font-size: 1.1rem;
+}
+
+#mainBox_midbox #room_box #div_1 span {
+    color: blue;
+    font-size: 1.1rem;
+    margin-left: 0.3rem;
+}
+
+#mainBox_midbox #room_box #div_2 .fa-chevron-right {
+    background-color: rgb(234, 234, 234);
+    color: rgb(82, 77, 77);
+    padding: 1.3rem 1.3rem;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0.1px 0.1px 1px 0px rgb(177, 174, 174), -0.1px -0.1px 1px 1px rgb(177, 174, 174);
+    position: relative;
+    bottom: 10%;
+    transition: all 0.2s;
+}
+
+#mainBox_midbox #room_box #div_2 .fa-chevron-right:hover {
+    background-color: rgb(180, 180, 180);
+    color: black;
+    cursor: pointer;
+}
+
+
+/* `````````styling for mid main-box posts section``````````````````` */
+
+#mainBox_midbox #posts {
+    margin: 1rem auto;
+    width: 70%;
+    position: relative;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 0.5px 5px 1px rgb(177, 174, 174), -1px -0.5px 5px 1px rgb(177, 174, 174);
+}
+
+#mainBox_midbox #posts .heading {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0.6rem;
+}
+
+#mainBox_midbox #posts .heading img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 0rem 0.5rem;
+}
+
+#mainBox_midbox #posts .heading .menubar {
+    position: absolute;
+    right: 5%;
+    color: rgb(90, 89, 89);
+}
+
+#mainBox_midbox #posts .heading span {
+    color: rgb(90, 89, 89);
+}
+
+#mainBox_midbox #posts .heading h4 {
+    margin-top: 0.3rem;
+}
+
+#mainBox_midbox #posts .heading .fa-globe-africa {
+    color: rgb(90, 89, 89);
+}
+
+#mainBox_midbox #posts .caption {
+    margin: 0.6rem 1rem;
+}
+
+#mainBox_midbox #posts .like_comment_portion {
+    margin: 1rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+#mainBox_midbox #posts .image img {
+    width: 100%;
+}
+
+#mainBox_midbox #posts .emoji-1 {
+    font-size: 1.2rem;
+    margin-left: 0.2rem;
+}
+
+#mainBox_midbox #posts .emoji-2 {
+    position: relative;
+    left: 5px;
+    font-size: 1.2rem;
+}
+
+#mainBox_midbox #posts .emoji-3 {
+    position: relative;
+    right: 2.7rem;
+    font-size: 1.2rem;
+}
+
+#mainBox_midbox #posts .like_comment_portion .comment {
+    margin-right: 0.4rem;
+    margin-left: 0rem;
+    color: rgb(90, 89, 89);
+}
+
+#mainBox_midbox #posts .like_comment_portion .react {
+    position: relative;
+    right: 15px;
+    color: rgb(90, 89, 89);
+}
+
+#mainBox_midbox #posts .like_comment_portion .share {
+    color: rgb(90, 89, 89);
+}
+
+#mainBox_midbox #posts .icon {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#mainBox_midbox #posts .icon span {
+    margin-right: 2.5rem;
+    margin-left: 0.3rem;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+
+#mainBox_midbox #posts .icon div {
+    height: 2.5rem;
+    margin-right: 0.4rem;
+    border-radius: 12px;
+    padding-top: 0.5rem;
+    padding-left: 0.7rem;
+    transition: all 0.4s;
+}
+
+#mainBox_midbox #posts .icon div:hover {
+    background: rgb(213, 213, 213);
+    cursor: pointer;
+}
+
+#mainBox_midbox #posts .icon .fa-thumbs-up {
+    color: rgb(55, 55, 207);
+    font-size: 1.2rem;
+}
+
+#mainBox_midbox #posts .icon .fa-comment {
+    color: red;
+    font-size: 1.2rem;
+}
+
+#mainBox_midbox #posts .icon .fa-share {
+    color: green;
+    font-size: 1.2rem;
+}
+
+
+/*----------- for right box portion --------- */
+
+#mainBox_right_box {
+    position: fixed;
+    right: 0;
+    width: 20%;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+
+/*--------- for right box sponsored portion -----------*/
+
+#mainBox_right_box .sponsored_header {
+    margin: 0rem 0rem 1rem 0.4rem;
+}
+
+#mainBox_right_box .sponsored_child {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0.4rem 0.4rem;
+    width: 95%;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+#mainBox_right_box .sponsored_child:hover {
+    background: rgb(229, 229, 229);
+    cursor: pointer;
+}
+
+#mainBox_right_box .sponsored_child img {
+    width: 6rem;
+    height: 5rem;
+    border-radius: 15px;
+    margin: 0rem 0.4rem 0rem 0rem;
+}
+
+#mainBox_right_box .horizontal_ruler {
+    width: 100%;
+    height: 0.5px;
+    margin-bottom: 0.8rem;
+    background-color: grey;
+}
+
+
+/*--------- for right box birthday portion -----------*/
+
+#mainBox_right_box .birthday_header {
+    margin: 0rem 0rem 1rem 0.4rem;
+}
+
+#mainBox_right_box #birthday_text {
+    display: flex;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0.4rem 0.4rem;
+    width: 95%;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+#mainBox_right_box #birthday_text:hover {
+    background: rgb(229, 229, 229);
+    cursor: pointer;
+}
+
+#mainBox_right_box #birthday_text .fa-gift {
+    font-size: 1.8rem;
+    margin: 0rem 0.4rem 0rem 0rem;
+    color: rgb(26, 163, 218);
+}
+
+
+/*--------- for right box contact_box portion -----------*/
+
+#mainBox_right_box .contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+#mainBox_right_box .contact h3 {
+    margin: 0rem 0rem 0rem 0.4rem;
+}
+
+#mainBox_right_box .fa-video {
+    margin: 0rem 0.8rem 0rem 0rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+    color: rgb(69, 69, 69);
+    transition: all 0.2s;
+}
+
+#mainBox_right_box .fa-search {
+    margin: 0rem 0.8rem 0rem 0rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+    color: rgb(69, 69, 69);
+    transition: all 0.2s;
+}
+
+#mainBox_right_box .fa-ellipsis-h {
+    margin: 0rem 0.8rem 0rem 0rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+    color: rgb(69, 69, 69);
+    transition: all 0.2s;
+}
+
+#mainBox_right_box .fa-video:hover,
+#mainBox_right_box .fa-search:hover,
+#mainBox_right_box .fa-ellipsis-h:hover {
+    background: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+#mainBox_right_box .contact_name {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem 0.3rem 0rem;
+    padding: 0.4rem 0.4rem;
+    width: 95%;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+#mainBox_right_box .contact_name:hover {
+    background: rgb(229, 229, 229);
+    cursor: pointer;
+}
+
+#mainBox_right_box .contact_name img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0rem 0.6rem 0rem 0rem;
+}
+
+
+/*--------- for right box group conversation portion -----------*/
+
+#mainBox_right_box .group_header {
+    margin: 0rem 0rem 1rem 0.4rem;
+}
+
+#mainBox_right_box .group_name {
+    display: flex;
+    align-items: center;
+    margin: 0rem 0rem 0.3rem 0rem;
+    padding: 0.4rem 0.4rem;
+    width: 95%;
+    border-radius: 12px;
+    transition: all 0.2s;
+}
+
+#mainBox_right_box .group_name:hover {
+    background: rgb(229, 229, 229);
+    cursor: pointer;
+}
+
+#mainBox_right_box .group_name img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: 0rem 0.4rem 0rem 0rem;
+}
+
+#mainBox_right_box .group_name .fa-plus-circle {
+    font-size: 2rem;
+    color: rgb(110, 108, 108);
+    margin: 0rem 0.4rem 0rem 0rem;
+}
+
+#icon_box {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgb(193, 192, 192);
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    box-shadow: 0px 0px 1px 1px rgb(192, 192, 192), -0px -0px 1px 1px rgb(192, 192, 192);
+}
+
+#icon_box .fa-inbox {
+    font-size: 1.2rem;
+    color: white;
+}

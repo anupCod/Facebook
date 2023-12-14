@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(255, 255, 255, 0.708);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header {
+    display: flex;
+    height: 6em;
+    align-items: center;
+    justify-content: center;
+    background-color: #4495e6;
+}
+
+.container .header #logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.container .header .btn {
+    margin-right: 32%;
+    margin-left: 1.3em;
+}
+
+.container .header .btn input {
+    border: 0;
+    padding: 0.7rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2bc433;
+    border-radius: 3px;
+}
+
+.container .header .url {
+    color: white;
+    margin-right: 0.6rem;
+}
+
+.container .header .url .fa-caret-down {
+    margin-left: 0.5rem;
+}
+
+.container .central_text {
+    margin: 3rem auto;
+}
+
+.container .central_text h1 {
+    margin-bottom: 0.6rem;
+    font-size: 2.8rem;
+}
+
+.container .central_text p {
+    font-size: 1.1rem;
+}
+
+.container .main_box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container .main_box .box_1 {
+    border: 1px solid rgb(213, 216, 213);
+    flex-basis: 38%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-right: 2em;
+    border-radius: 13px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0rem 0.1rem 1rem 0rem rgb(234, 234, 234), 0rem -0.1rem 1rem 0rem rgb(234, 234, 234), 0rem 0.1rem 1rem 0rem rgb(234, 234, 234), 0rem -0.1rem 1rem 0rem rgb(234, 234, 234);
+}
+
+.container .main_box .box_1 h2 {
+    margin-bottom: 0.8rem;
+}
+
+.container .main_box .box_1 p,
+.container .main_box .box_2 p {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: rgb(107, 107, 107);
+}
+
+.container .main_box .box_1 ._button,
+.container .main_box .box_2 ._button {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container .main_box .box_1 input,
+.container .main_box .box_2 input {
+    font-weight: bold;
+    padding: 0.3rem;
+    color: rgb(71, 71, 71);
+    border: 0.5px solid grey;
+    border-radius: 4px;
+}
+
+.container .main_box .box_2 h2 {
+    margin-bottom: 0.8rem;
+}
+
+img {
+    width: 15rem;
+    height: 13rem;
+    border-radius: 50%;
+    margin: 1em 0em;
+}
+
+.container .main_box .box_2 {
+    border: 1px solid rgb(213, 216, 213);
+    flex-basis: 38%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-right: 2em;
+    border-radius: 13px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0rem 0.1rem 1rem 0rem rgb(234, 234, 234), 0rem -0.1rem 1rem 0rem rgb(234, 234, 234), 0rem 0.1rem 1rem 0rem rgb(234, 234, 234), 0rem -0.1rem 1rem 0rem rgb(234, 234, 234);
+}

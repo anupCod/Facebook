@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+}
+
+#sign_up {
+    width: 100%;
+    height: 100vh;
+}
+
+#sign_up .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#sign_up .container .topic_content {
+    flex-basis: 50%;
+}
+
+#sign_up .container .topic_content h1 {
+    color: #006eff;
+    font-size: 4rem;
+    /*   font-weight: bold; */
+    margin-bottom: 0.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sign_up .container .topic_content p {
+    font-size: 1.9rem;
+    margin-bottom: 2.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sign_up .container .SignUp {
+    flex-basis: 33%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#sign_up .container .SignUp .text p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-right: 0.2em;
+    font-size: 1.1rem;
+}
+
+#sign_up .container .SignUp #form {
+    /* height: 100%; */
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0em;
+    padding: 0.5em 1em;
+    box-shadow: 6px 4px 10px 0px rgb(214, 214, 214), -6px -4px 10px 0px rgb(214, 214, 214);
+}
+
+#sign_up .container .SignUp #form p {
+    margin-bottom: 1.5em;
+}
+
+#sign_up .container .SignUp #form p a {
+    text-decoration: none;
+    color: #066df3;
+}
+
+
+#sign_up .container .SignUp .text p a:hover {
+    border-bottom: 1.5px solid black;
+}
+
+#sign_up .container .SignUp #form .horizontal_line {
+    height: 1px;
+    width: 25em;
+    background-color: rgb(207, 200, 200);
+    margin-bottom: 1.2em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 22em;
+    height: 3em;
+    border: 1px solid rgb(220, 219, 230);
+    background-color: rgb(249, 247, 247);
+    font-size: 1.17rem;
+    padding-left: 15px;
+    border-radius: 8px;
+    margin-top: 0.6em;
+    margin-bottom: 0.3em;
+}
+
+input[type="text"]:focus {
+    border: 2px solid blue;
+}
+
+input[value="Log In"] {
+    width: 22em;
+    height: 2.6em;
+    background-color: #1b77f0;
+    color: white;
+    border: 0;
+    font-size: 1.17rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 0.6em;
+    margin-bottom: 1.2em;
+}
+
+input[value="Create new account"] {
+    width: 11em;
+    height: 2.6em;
+    background-color: #1dc625;
+    border: 0;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 1.2em;
+}
